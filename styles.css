@@ -78,3 +78,76 @@ footer{background:#263e50}
 .contact-details p{margin:0 0 8px;font-size:14px;line-height:1.55}
 .directions-link{color:#fff;font-weight:800;text-underline-offset:4px}
 @media(max-width:900px){.contact-actions{min-width:0;max-width:420px}.contact-phone{min-width:0}}
+
+/* Visual polish pass */
+.brand{gap:9px}
+.brand img{
+  width:50px;
+  height:50px;
+  padding:0;
+  margin-right:0;
+  border:1px solid #dce7ed;
+  border-radius:8px;
+  background:#fff;
+  object-fit:contain;
+  object-position:center;
+  box-shadow:0 8px 18px rgba(45,78,102,.12);
+}
+.brand strong{font-size:20px;line-height:1.05}
+.brand small{font-size:12px;letter-spacing:.08em}
+.service-grid article{
+  min-height:255px;
+  transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+}
+.service-grid article:hover{
+  border-color:#c4d3dc;
+  box-shadow:0 16px 28px rgba(45,78,102,.08);
+  transform:translateY(-2px);
+}
+.service-grid .service-icon{
+  width:64px;
+  height:64px;
+  display:grid;
+  place-items:center;
+  margin-bottom:22px;
+  border:1px solid #d8e4eb;
+  border-radius:4px;
+  background:linear-gradient(180deg,#fff 0%,#f5f8fa 100%);
+  color:var(--teal-dark);
+}
+.service-grid .service-icon svg{
+  width:36px;
+  height:36px;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  fill:none;
+}
+.service-grid article:nth-child(2) .service-icon{color:#447996}
+.service-grid article:nth-child(3) .service-icon{color:#9a671b}
+.service-grid article:nth-child(4) .service-icon{color:#566591}
+.service-grid h3{margin-top:0}
+.analyte-card{
+  padding:0;
+  overflow:hidden;
+}
+.analyte-card h3{
+  margin:0;
+  padding:18px 22px;
+  background:#fafbfc;
+  color:var(--navy);
+  border-bottom:1px solid var(--line);
+  box-shadow:inset 4px 0 0 var(--teal);
+}
+.analyte-card h3 small{color:var(--muted)}
+.analyte-card ul{padding:18px 22px 22px}
+@media(max-width:600px){
+  .brand{gap:9px}
+  .brand img{width:50px;height:50px;padding:0;margin-right:0;border-radius:7px}
+  .brand strong{font-size:16px}
+  .brand small{font-size:10px}
+  .service-grid .service-icon{width:58px;height:58px}
+  .analyte-card h3{padding:16px 18px}
+  .analyte-card ul{padding:14px 18px 18px}
+}
