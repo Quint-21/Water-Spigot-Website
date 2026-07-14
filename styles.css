@@ -1165,3 +1165,88 @@ footer {
     padding: 14px 18px 18px;
   }
 }
+
+/* Testing timelines and project options */
+.service-notes {
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+.service-notes-heading {
+  margin-bottom: 28px;
+}
+.service-note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+}
+.service-note-grid article {
+  min-height: 230px;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  background: linear-gradient(180deg, #fff 0%, #f8fafb 100%);
+}
+.service-note-grid article:last-child {
+  border-right: 0;
+}
+.service-note-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #d8e2e8;
+  border-radius: 50%;
+  background: #eef4f7;
+  color: var(--warning-line);
+  font-family: "Segoe UI Symbol",Arial,sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+.service-note-grid h3 {
+  margin: 18px 0 10px;
+  color: var(--navy);
+  font-size: 22px;
+  line-height: 1.2;
+}
+.service-note-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  border: 1px solid rgba(255,255,255,.32);
+  color: #fff;
+  text-decoration: none;
+}
+.contact-email small {
+  color: #cfe3f2;
+  font-weight: 700;
+}
+.contact-email strong {
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+.contact-email:hover {
+  background: rgba(255,255,255,.08);
+}
+#contact-phone {
+  scroll-margin-top: 120px;
+}
+#contact-phone:target {
+  box-shadow: 0 0 0 4px rgba(230,186,74,.55);
+}
+@media(max-width:900px) {
+  .service-note-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-note-grid article {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .service-note-grid article:last-child {
+    border-bottom: 0;
+  }
+}
